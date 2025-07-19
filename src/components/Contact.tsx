@@ -88,7 +88,7 @@ const Contact = () => {
                     type="text"
                     name="name"
                     required
-                    className="w-full px-4 py-2 border border-border rounded-md focus:ring-2 focus:ring-primary focus:border-transparent"
+                    className="w-full px-4 py-2 border border-border rounded-md focus:ring-2 focus:ring-primary focus:border-transparent bg-background text-foreground"
                     placeholder="Your full name"
                   />
                 </div>
@@ -100,7 +100,7 @@ const Contact = () => {
                     type="email"
                     name="email"
                     required
-                    className="w-full px-4 py-2 border border-border rounded-md focus:ring-2 focus:ring-primary focus:border-transparent"
+                    className="w-full px-4 py-2 border border-border rounded-md focus:ring-2 focus:ring-primary focus:border-transparent bg-background text-foreground"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -112,7 +112,7 @@ const Contact = () => {
                     type="text"
                     name="subject"
                     required
-                    className="w-full px-4 py-2 border border-border rounded-md focus:ring-2 focus:ring-primary focus:border-transparent"
+                    className="w-full px-4 py-2 border border-border rounded-md focus:ring-2 focus:ring-primary focus:border-transparent bg-background text-foreground"
                     placeholder="Research inquiry, collaboration, etc."
                   />
                 </div>
@@ -124,7 +124,7 @@ const Contact = () => {
                     name="message"
                     required
                     rows={6}
-                    className="w-full px-4 py-2 border border-border rounded-md focus:ring-2 focus:ring-primary focus:border-transparent"
+                    className="w-full px-4 py-2 border border-border rounded-md focus:ring-2 focus:ring-primary focus:border-transparent bg-background text-foreground"
                     placeholder="Please describe your inquiry or interest in detail..."
                   />
                 </div>

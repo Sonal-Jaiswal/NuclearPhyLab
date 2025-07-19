@@ -75,56 +75,67 @@ const Contact = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="space-y-6">
+              <form
+                action="https://formspree.io/f/xdkdaknj"
+                method="POST"
+                className="space-y-6"
+              >
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
                     Name
                   </label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
+                    name="name"
+                    required
                     className="w-full px-4 py-2 border border-border rounded-md focus:ring-2 focus:ring-primary focus:border-transparent"
                     placeholder="Your full name"
                   />
                 </div>
-                
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
                     Email
                   </label>
-                  <input 
-                    type="email" 
+                  <input
+                    type="email"
+                    name="email"
+                    required
                     className="w-full px-4 py-2 border border-border rounded-md focus:ring-2 focus:ring-primary focus:border-transparent"
                     placeholder="your.email@example.com"
                   />
                 </div>
-                
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
                     Subject
                   </label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
+                    name="subject"
+                    required
                     className="w-full px-4 py-2 border border-border rounded-md focus:ring-2 focus:ring-primary focus:border-transparent"
                     placeholder="Research inquiry, collaboration, etc."
                   />
                 </div>
-                
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
                     Message
                   </label>
-                  <textarea 
+                  <textarea
+                    name="message"
+                    required
                     rows={6}
                     className="w-full px-4 py-2 border border-border rounded-md focus:ring-2 focus:ring-primary focus:border-transparent"
                     placeholder="Please describe your inquiry or interest in detail..."
                   />
                 </div>
-                
-                <Button size="lg" className="w-full gap-2">
+                <button
+                  type="submit"
+                  className="w-full gap-2 flex items-center justify-center px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90 transition"
+                >
                   <Mail className="h-5 w-5" />
                   Send Message
-                </Button>
-              </div>
+                </button>
+              </form>
             </CardContent>
           </Card>
         </div>

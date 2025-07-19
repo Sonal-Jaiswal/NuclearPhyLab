@@ -2,8 +2,10 @@ import { Button } from '@/components/ui/button';
 import { FileText, Users, Mail, Atom, Zap, Radio } from 'lucide-react';
 import { Suspense, lazy } from 'react';
 import kiitCampus from '@/assets/kiit-campus.jpg';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+  const navigate = useNavigate();
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -77,7 +79,7 @@ const Hero = () => {
               size="lg" 
               variant="outline"
               className="quantum-border hover:bg-quantum-glow/10 hover:text-quantum-glow transition-all duration-300"
-              onClick={() => scrollToSection('publications')}
+              onClick={() => navigate('/publications')}
             >
               <FileText className="mr-2 h-5 w-5" />
               Publications

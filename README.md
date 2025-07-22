@@ -81,50 +81,6 @@ For any questions, contact Prof. B.B Sahu at bbsahufpy@kiit.ac.in
 <code_block_to_apply_changes_from>
 ```
 
----
-
-**Let me know if you want this added to your README automatically, or if you want a more detailed/step-by-step guide!**
-
----
-
-## Running the Backend (Admin Panel)
-
-1. Install dependencies:
-   ```
-   npm install
-   ```
-
-2. Start the admin panel:
-   ```
-   npm run admin-panel
-   ```
-   - Visit [http://localhost:3001](http://localhost:3001) in your browser.
-   - Use the web forms to update students and publications.
-   - Changes are saved to `public/students.json` and `public/publications.json`.
-
-3. Commit and push your changes:
-   ```
-   git add public/students.json public/publications.json
-   git commit -m "Update research group and publications data"
-   git push
-   ```
-
----
-
-## Running the Frontend
-
-1. Install dependencies:
-   ```
-   npm install
-   ```
-
-2. Start the dev server:
-   ```
-   npm run dev
-   ```
-   - Open [http://localhost:8080](http://localhost:8080) in your browser.
-
----
 
 ## Notes
 
